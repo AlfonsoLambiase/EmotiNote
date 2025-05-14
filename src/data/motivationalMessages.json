@@ -1,0 +1,39 @@
+{
+    "entusiasta": [
+      "Continua a sorridere, la tua energia è contagiosa!",
+      "Ogni giorno felice è un dono: vivilo al massimo!",
+      "La tua gioia illumina il mondo. Non smettere mai di splendere!"
+    ],
+
+    "motivato": [
+        "Continua così! I tuoi sogni stanno prendendo forma.",
+        "La determinazione è il tuo superpotere.",
+        "Fai un passo alla volta: stai andando lontano."
+      ],
+
+      "OK, ma nulla di speciale": [
+        "Ci sono giorni neutri, e va bene così.",
+        "Anche nei giorni grigi, puoi trovare piccole luci.",
+        "La calma è un dono: accoglila senza giudizio."
+      ],
+
+      "Vivo la giornata": [
+        "Anche i giorni normali hanno valore: ti stanno portando avanti.",
+        "Va bene non avere sempre tutto chiaro. Stai comunque facendo del tuo meglio.",
+        "Non tutti i giorni brillano, ma ognuno è un tassello del tuo percorso."
+      ],
+
+      "ansioso": [
+        "Respira profondamente. Sei al sicuro.",
+        "L'ansia è una nuvola, tu sei il cielo.",
+        "Passerà. E quando accadrà, sarai più forte."
+      ],
+
+    "triste": [
+      "È normale sentirsi giù. Concediti il tempo per guarire.",
+      "Anche dopo la pioggia più forte, torna il sereno.",
+      "Ricorda: sei più forte di quanto pensi."
+    ]
+
+  }
+  
