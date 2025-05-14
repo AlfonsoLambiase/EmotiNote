@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { FormDiario } from "../components/FormDiario";
 import motivationalMessages from "../data/motivationalMessages.json";
+import { FormDiario } from "../components/FormDiario";
 
 const Today = ({ onDaySubmit }) => {
   const [submitted, setSubmitted] = useState(false);
@@ -24,7 +24,9 @@ const Today = ({ onDaySubmit }) => {
       const randomIndex = Math.floor(Math.random() * phrases.length);
       setMotivationalPhrase(phrases[randomIndex]);
     } else {
-      setMotivationalPhrase("Hai fatto un buon lavoro nel condividere come ti senti.");
+      setMotivationalPhrase(
+        "Hai fatto un buon lavoro nel condividere come ti senti."
+      );
     }
 
     setSubmitted(true);
@@ -34,7 +36,9 @@ const Today = ({ onDaySubmit }) => {
     return (
       <div className="flex justify-center items-center h-screen px-4">
         <div className="bg-white p-6 rounded-xl shadow-md max-w-md text-center">
-          <p className="text-orange-500 text-xl font-semibold mb-4">Grazie per aver condiviso 🌟</p>
+          <p className="text-orange-500 text-xl font-semibold mb-4">
+            Grazie per aver condiviso 🌟
+          </p>
           <p className="text-gray-800 text-lg italic">"{motivationalPhrase}"</p>
         </div>
       </div>
