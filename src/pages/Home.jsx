@@ -6,8 +6,8 @@ const Home = () => {
     <>
    
 
-    <div className="flex justify-center items-center text-center p-5">
-      <p>
+ <div className="max-w-xl mx-auto p-6 bg-white rounded-2xl shadow-md border border-gray-200 text-center">
+  <p>
         Benvenuto nel tuo diario personale.
         <br />
         Questo è il tuo spazio sicuro, dove ogni emozione è accolta con

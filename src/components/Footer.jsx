@@ -5,9 +5,9 @@ const Footer =() => {
         
        <footer className="flex justify-center fixed bottom-0 left-0 w-full gap-6 border-t bg-orange-400 p-4">
 
-        <p>contatti</p>
-        <p>address</p>
-        <p>copyright</p>
+        <p>Contatti</p>
+        <p>Address</p>
+        <p>Copyright</p>
 
        </footer>
         

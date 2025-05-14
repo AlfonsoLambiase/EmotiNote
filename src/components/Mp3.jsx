@@ -16,11 +16,12 @@ const Mp3 = () => {
   };
 
   return (
-    <div className="music-player-container w-20 h-20 bg-orange-400 rounded-full shadow-lg m-5 flex items-center justify-center">
-      <button
-        onClick={handlePlayPause}
-        className="play-pause-button cursor-pointer"
-      >
+    <div
+      onClick={handlePlayPause}
+      className="cursor-pointer w-20 h-20 bg-orange-400 rounded-full shadow-lg m-5 flex items-center justify-center
+             hover:bg-orange-500 active:scale-95 transition duration-200 ease-in-out"
+    >
+      <button>
         {isPlaying ? <Mute /> : <Play />} {/* Testo play o pause */}
       </button>
       <audio ref={audioRef} src={relaxSound} loop />
