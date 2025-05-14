@@ -1,0 +1,117 @@
+{
+    "translations": [
+      {
+        "code": 0,
+        "description": "Cielo sereno"
+      },
+      {
+        "code": 1,
+        "description": "Prevalentemente sereno"
+      },
+      {
+        "code": 2,
+        "description": "Parzialmente nuvoloso"
+      },
+      {
+        "code": 3,
+        "description": "Coperto"
+      },
+      {
+        "code": 45,
+        "description": "Nebbia"
+      },
+      {
+        "code": 48,
+        "description": "Nebbia con brina depositante"
+      },
+      {
+        "code": 51,
+        "description": "Pioviggine: Intensità leggera"
+      },
+      {
+        "code": 53,
+        "description": "Pioviggine: Intensità moderata"
+      },
+      {
+        "code": 55,
+        "description": "Pioviggine: Intensità densa"
+      },
+      {
+        "code": 56,
+        "description": "Pioviggine congelante: Intensità leggera"
+      },
+      {
+        "code": 57,
+        "description": "Pioviggine congelante: Intensità densa"
+      },
+      {
+        "code": 61,
+        "description": "Pioggia: Intensità leggera"
+      },
+      {
+        "code": 63,
+        "description": "Pioggia: Intensità moderata"
+      },
+      {
+        "code": 65,
+        "description": "Pioggia: Intensità forte"
+      },
+      {
+        "code": 66,
+        "description": "Pioggia congelante: Intensità leggera"
+      },
+      {
+        "code": 67,
+        "description": "Pioggia congelante: Intensità forte"
+      },
+      {
+        "code": 71,
+        "description": "Nevicate: Intensità leggera"
+      },
+      {
+        "code": 73,
+        "description": "Nevicate: Intensità moderata"
+      },
+      {
+        "code": 75,
+        "description": "Nevicate: Intensità forte"
+      },
+      {
+        "code": 77,
+        "description": "Grani di neve"
+      },
+      {
+        "code": 80,
+        "description": "Rovesci di pioggia: Leggeri"
+      },
+      {
+        "code": 81,
+        "description": "Rovesci di pioggia: Moderati"
+      },
+      {
+        "code": 82,
+        "description": "Rovesci di pioggia: Violenti"
+      },
+      {
+        "code": 85,
+        "description": "Rovesci di neve: Leggeri"
+      },
+      {
+        "code": 86,
+        "description": "Rovesci di neve: Forti"
+      },
+      {
+        "code": 95,
+        "description": "Temporale: Leggero o moderato"
+      },
+      {
+        "code": 96,
+        "description": "Temporale con grandine: Leggero"
+      },
+      {
+        "code": 99,
+        "description": "Temporale con grandine: Forte"
+      }
+    ]
+  }
+  
