@@ -32,7 +32,7 @@ const Today = ({ onDaySubmit }) => {
 
   if (submitted) {
     return (
-      <div className="flex justify-center items-center h-screen px-4">
+      <div className="flex justify-center items-center mb-5 px-4">
         <div className="bg-white p-6 rounded-xl shadow-md max-w-md text-center">
           <p className="text-orange-500 text-xl font-semibold mb-4">Grazie per aver condiviso 🌟</p>
           <p className="text-gray-800 text-lg italic">"{motivationalPhrase}"</p>
