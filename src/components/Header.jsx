@@ -7,10 +7,10 @@ const Header =() => {
     <nav>
         <ul className="flex justify-center gap-10">
 
-            <li><Link to="/">Home</Link></li>
-            <li><Link to="/today">Daily Mood</Link></li>
-            <li><Link to="/diario">Diario</Link></li>
-            <li><Link to="/metereopatia">Metereopatia</Link></li>
+            <li><Link to="/" className=" hover:text-white cursor-pointer transition duration-100">Home</Link></li>
+            <li><Link to="/today" className=" hover:text-white cursor-pointer transition duration-100">Daily Mood</Link></li>
+            <li><Link to="/diario" className=" hover:text-white cursor-pointer transition duration-100">Diario</Link></li>
+            <li><Link to="/metereopatia" className=" hover:text-white cursor-pointer transition duration-100">Metereopatia</Link></li>
         </ul>
 
     </nav>

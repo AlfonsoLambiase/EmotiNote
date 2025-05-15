@@ -7,7 +7,8 @@ const Home = () => {
     <>
    
 
- <div className="max-w-xl mx-auto p-6 bg-white rounded-2xl shadow-md border border-gray-200 text-center " >
+ <div className="max-w-xl mx-auto p-6 bg-white rounded-2xl shadow-md border border-gray-200 text-center" >
+  <h1 className="text-3xl font-bold text-center mb-6 text-gray-800">EmotiNote</h1>
   <p >
         Benvenuto nel tuo diario personale.
         <br />
@@ -24,16 +25,15 @@ const Home = () => {
         Sentiti libero di essere te stesso, senza filtri né giudizi. Le tue
         emozioni contano.
       </p>
-      </div>
-
-       <div className='fit-content'>
+    
         <Lottie 
         animationData={noteBookAnimation} 
         loop={true} 
         autoplay={true} 
-        style={{ width: 200, height: 200 }} 
+        style={{ width:100, height:100 }} 
       />
-    </div>
+
+      </div>
     </>
   );
 };

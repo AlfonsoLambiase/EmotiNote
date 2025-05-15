@@ -1,6 +1,7 @@
 import { useState } from "react";
 import motivationalMessages from "../data/motivationalMessages.json";
 
+
 export const FormDiario = ({ onSubmit }) => {
   const [motivationalMessage, setMotivationalMessage] = useState("");
 
