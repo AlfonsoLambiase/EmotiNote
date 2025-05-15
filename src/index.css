@@ -1,1 +1,10 @@
 @import "tailwindcss";
+
+body::-webkit-scrollbar {
+  display: none;
+}
+body {
+  -ms-overflow-style: none; /* IE e Edge */
+  scrollbar-width: none;     /* Firefox */
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, Helvetica, sans-serif;
+}

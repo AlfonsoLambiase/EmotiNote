@@ -1,6 +1,7 @@
 import { useState } from "react";
 import motivationalMessages from "../data/motivationalMessages.json";
 
+
 export const FormDiario = ({ onSubmit }) => {
   const [motivationalMessage, setMotivationalMessage] = useState("");
 
@@ -27,7 +28,7 @@ export const FormDiario = ({ onSubmit }) => {
   };
 
   return (
-    <div className="w-full">
+    <div className="w-full ">
       <form onSubmit={submit} className="flex flex-col gap-6">
         <h2 className="text-xl font-semibold text-gray-800 text-center">
           Come ti senti oggi?
