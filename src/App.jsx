@@ -22,13 +22,26 @@ function App() {
   const [diario, setDiario] = useState(readFromStorage());
 
   const aggiornaDiario = (day) => {
-    setDiario([...diario, day]);
+    const dayWithTimestamp = {
+      ...day,
+      timestamp: new Date().toLocaleString("it-IT", {
+        weekday: "long",
+        year: "numeric",
+        month: "long",
+        day: "numeric",
+        hour: "2-digit",
+        minute: "2-digit",
+        second: "2-digit",
+      }),
+    };
+    setDiario([...diario, dayWithTimestamp]);
   };
 
   useEffect(() => {
     localStorage.setItem("diario", JSON.stringify(diario));
   }, [diario]);
-  console.log(diario);
+
+  console.log(diario, "Stato Diario alle", new Date().toLocaleString());
 
   return (
     <>
@@ -38,11 +51,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/diario" element={<Diario />} />
-          <Route
-            path="/today"
-            element={<Today onDaySubmit={aggiornaDiario} />}
-          />
-          <Route path="/Metereopatia" element={<Metereopatia/>}/>
+          <Route path="/today" element={<Today onDaySubmit={aggiornaDiario} />} />
+          <Route path="/Metereopatia" element={<Metereopatia />} />
         </Routes>
         <Footer />
       </DiarioContext.Provider>

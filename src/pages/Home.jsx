@@ -22,15 +22,16 @@ const Home = () => {
         <br />
         Aiuta la tua salute mentale, ascoltati, scriviti, liberati.
         <br />
-        Sentiti libero di essere te stesso, senza filtri né giudizi. Le tue
-        emozioni contano.
+        Sentiti libero di essere te stesso, senza filtri né giudizi.
+        <br/> 
+        Le tue emozioni contano.
       </p>
     
         <Lottie 
         animationData={noteBookAnimation} 
         loop={true} 
         autoplay={true} 
-        style={{ width:100, height:100 }} 
+        style={{ width:100, height:100, margin: "0 auto" }} 
       />
 
       </div>
