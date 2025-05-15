@@ -4,6 +4,7 @@ import motivationalMessages from "../data/motivationalMessages.json";
 
 export const FormDiario = ({ onSubmit }) => {
   const [motivationalMessage, setMotivationalMessage] = useState("");
+  const [descrizione, setDescrizione]= useState("")
 
   const getRandomMessage = (mood) => {
     const messages = motivationalMessages[mood];
@@ -46,7 +47,7 @@ export const FormDiario = ({ onSubmit }) => {
             <input
               type="radio"
               name="mood"
-              value="entusiasta"
+              value="Entusiasta"
               className="accent-orange-500"
             />
             Entusiasta ✨
@@ -56,7 +57,7 @@ export const FormDiario = ({ onSubmit }) => {
             <input
               type="radio"
               name="mood"
-              value="motivato"
+              value="Motivato"
               className="accent-orange-500"
             />
             Motivato 💪
@@ -66,7 +67,7 @@ export const FormDiario = ({ onSubmit }) => {
             <input
               type="radio"
               name="mood"
-              value="nulla-particolare"
+              value="Ok, ma nulla di speciale"
               className="accent-orange-500"
             />
             Ok, ma nulla di speciale 👍
@@ -76,17 +77,17 @@ export const FormDiario = ({ onSubmit }) => {
             <input
               type="radio"
               name="mood"
-              value="giornata"
+              value="Vivo la giornata"
               className="accent-orange-500"
             />
-            Vivo la giornata ☀
+            Vivo la giornata 🌞
           </label>
 
           <label className="flex items-center gap-2 p-3 border rounded-xl cursor-pointer hover:bg-gray-100">
             <input
               type="radio"
               name="mood"
-              value="ansioso"
+              value="Ansioso"
               className="accent-orange-500"
             />
             Ansioso 😟
@@ -96,7 +97,7 @@ export const FormDiario = ({ onSubmit }) => {
             <input
               type="radio"
               name="mood"
-              value="triste"
+              value="Triste"
               className="accent-orange-500"
             />
             Triste 😢
