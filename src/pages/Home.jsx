@@ -1,13 +1,14 @@
 import noteBookAnimation from '../animation/noteBook.json';
 import Lottie from 'lottie-react';
 
+
 const Home = () => {
   return (
     <>
    
 
- <div className="max-w-xl mx-auto p-6 bg-white rounded-2xl shadow-md border border-gray-200 text-center">
-  <p>
+ <div className="max-w-xl mx-auto p-6 bg-white rounded-2xl shadow-md border border-gray-200 text-center " >
+  <p >
         Benvenuto nel tuo diario personale.
         <br />
         Questo è il tuo spazio sicuro, dove ogni emozione è accolta con
