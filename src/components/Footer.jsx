@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <>
-      <footer className="flex justify-center  fixed bottom-0 left-0 w-full gap-6 border-t bg-orange-400 p-4 ">
+      <footer className="flex justify-center w-full gap-10 border-t bg-orange-400 p-4">
         <ul className="flex gap-10">
           <li>
             <Link
@@ -14,16 +14,16 @@ const Footer = () => {
           </li>
           <li>
             <Link
-              to="/Address"
+              to="/SocialMedia"
               className=" hover:text-white cursor-pointer transition duration-100">
-              Address
+              Social Media
             </Link>
           </li>
           <li>
             <Link
-              to="/Copyright"
+              to="/FAQ"
               className=" hover:text-white cursor-pointer transition duration-100">
-              Copyright
+              FAQ
             </Link>
           </li>
         </ul>

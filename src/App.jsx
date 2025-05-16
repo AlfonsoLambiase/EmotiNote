@@ -10,8 +10,8 @@ import Metereopatia from "./pages/Metereopatia";
 import FormLocation from "./components/FormLocation";
 import ResultPage from "./components/ResultPage";
 import Contatti from "./pages/Contatti";
-import Address from "./pages/Address";
-import Copyright from "./pages/Copyright";
+import SocialMedia from "./pages/SocialMedia";
+import FAQ from "./pages/FAQ";
 
 export const DiarioContext = createContext();
 
@@ -51,8 +51,10 @@ function App() {
   return (
     <>
       <DiarioContext.Provider value={diario}>
+        <div className="min-h-screen flex flex-col">
         <Header />
         <Mp3 />
+        <main className="flex-grow">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/diario" element={<Diario />} />
@@ -61,10 +63,12 @@ function App() {
           <Route path="/FormLocation" element={<FormLocation />} />
           <Route path="/risultato" element={<ResultPage />} />
           <Route path="/Contatti" element={<Contatti />} />
-          <Route path="/Address" element={<Address />} />
-          <Route path="/Copyright" element={<Copyright />} />
+          <Route path="/SocialMedia" element={<SocialMedia />} />
+          <Route path="/FAQ" element={<FAQ />} />
         </Routes>
+        </main>
         <Footer />
+        </div>
       </DiarioContext.Provider>
     </>
   );
