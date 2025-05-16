@@ -1,8 +1,9 @@
-import sunnyAnimation from "../animation/sunny.json";
-import rainyAnimation from "../animation/rainy.json";
-import cloudyAnimation from "../animation/cloudy.json";
-import snowlyAnimation from "../animation/snowly.json";
-import Lottie from "lottie-react";
+// import sunnyAnimation from "../animation/sunny.json";
+// import rainyAnimation from "../animation/rainy.json";
+// import cloudyAnimation from "../animation/cloudy.json";
+// import snowlyAnimation from "../animation/snowly.json";
+// import Lottie from "lottie-react";
+import { Link } from "react-router-dom";
 
 const Metereopatia = () => {
   return (
@@ -17,46 +18,55 @@ const Metereopatia = () => {
           metereopatia è una condizione in cui l’umore, l’energia e persino il
           corpo reagiscono ai cambiamenti del tempo: pioggia, vento, caldo o
           freddo possono influenzare come ti senti, senza che tu te ne accorga.
-          <br/>
-          E tu, pensi di esserlo? Scopriamolo insieme! ☁️☀️
+          <br />
+          E tu, pensi di esserlo?☁️☀️
         </p>
+        <br/>
 
-        <div className="fit-content">
-          <Lottie
-            animationData={sunnyAnimation}
-            loop={true}
-            autoplay={true}
-            style={{ width: 200, height: 200, margin: "0 auto" }}
-          />
-        </div>
+        <Link to="/FormLocation"><button className="bg-orange-400 text-white py-2 px-4 rounded-lg hover:bg-orange-500 transition">
+            Scopriamolo Insieme
+          </button></Link>
 
-        <div className="fit-content">
-          <Lottie
-            animationData={rainyAnimation}
-            loop={true}
-            autoplay={true}
-            style={{ width: 200, height: 200 }}
-          />
-        </div>
 
-        <div className="fit-content">
-          <Lottie
-            animationData={cloudyAnimation}
-            loop={true}
-            autoplay={true}
-            style={{ width: 200, height: 200 }}
-          />
-        </div>
 
-        <div className="fit-content">
-          <Lottie
-            animationData={snowlyAnimation}
-            loop={true}
-            autoplay={true}
-            style={{ width: 200, height: 200 }}
-          />
-        </div>
+      {/* <div className="fit-content">
+        <Lottie
+          animationData={sunnyAnimation}
+          loop={true}
+          autoplay={true}
+          style={{ width: 200, height: 200, margin: "0 auto" }}
+        />
       </div>
+
+      <div className="fit-content">
+        <Lottie
+          animationData={rainyAnimation}
+          loop={true}
+          autoplay={true}
+          style={{ width: 200, height: 200 }}
+        />
+      </div>
+
+      <div className="fit-content">
+        <Lottie
+          animationData={cloudyAnimation}
+          loop={true}
+          autoplay={true}
+          style={{ width: 200, height: 200 }}
+        />
+      </div>
+
+      <div className="fit-content">
+        <Lottie
+          animationData={snowlyAnimation}
+          loop={true}
+          autoplay={true}
+          style={{ width: 200, height: 200 }}
+        />
+      </div> */}
+
+
+    </div >
     </>
   );
 };

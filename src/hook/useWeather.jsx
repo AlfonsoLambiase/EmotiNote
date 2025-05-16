@@ -36,8 +36,3 @@ export const useWeather = () => {
   return { getWeather, getWeatherDescription, meteo, error, loading };
 };
 
-//https://api.open-meteo.com/v1/forecast?latitude=45.07&longitude=7.69&current_weather=true
-// Crea uno stato per il meteo
-// Chiamata API
-// Gestire errori
-// Gestire Loading

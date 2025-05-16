@@ -54,7 +54,9 @@ const Today = ({ onDaySubmit }) => {
           <p className="text-orange-500 text-xl font-semibold mb-4">
             Grazie per aver condiviso 🌟
           </p>
-          <p className="text-gray-800 text-lg italic mb-6">"{motivationalPhrase}"</p>
+          <p className="text-gray-800 text-lg italic mb-6">
+            "{motivationalPhrase}"
+          </p>
           <button
             onClick={() => {
               setSubmitted(false);

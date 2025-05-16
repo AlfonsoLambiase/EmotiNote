@@ -7,6 +7,8 @@ import Footer from "./components/Footer";
 import Mp3 from "./components/Mp3";
 import { createContext, useEffect, useState } from "react";
 import Metereopatia from "./pages/Metereopatia";
+import FormLocation from "./components/FormLocation";
+import ResultPage from "./components/ResultPage";
 
 export const DiarioContext = createContext();
 
@@ -53,6 +55,8 @@ function App() {
           <Route path="/diario" element={<Diario />} />
           <Route path="/today" element={<Today onDaySubmit={aggiornaDiario} />} />
           <Route path="/Metereopatia" element={<Metereopatia />} />
+          <Route path="/FormLocation" element={<FormLocation />} />
+          <Route path="/risultato" element={<ResultPage />} />
         </Routes>
         <Footer />
       </DiarioContext.Provider>
