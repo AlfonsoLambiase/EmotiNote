@@ -33,6 +33,6 @@ export const useWeather = () => {
      } 
     }
 
-  return { getWeather, getWeatherDescription, meteo, error, loading };
+  return { getWeather, getWeatherDescription, meteo, error, loading};
 };
 

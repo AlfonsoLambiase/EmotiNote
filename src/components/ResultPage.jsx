@@ -20,7 +20,7 @@ const ResultPage = () => {
 
     const { lat, lon } = state;
     getWeather({ latitude: lat, longitude: lon });
-  }, [state, getWeather, navigate]);
+  }, [state, navigate]);
 
   if (!state) return null;
 
