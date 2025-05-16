@@ -1,5 +1,11 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import Lottie from "lottie-react";
+
+import sunnyAnimation from "../animation/sunny.json";
+import rainyAnimation from "../animation/rainy.json";
+import cloudyAnimation from "../animation/cloudy.json";
+import snowlyAnimation from "../animation/snowly.json";
 
 const FormLocation = () => {
   const [paese, setPaese] = useState("");
@@ -46,41 +52,76 @@ const FormLocation = () => {
   };
 
   return (
-    <div className="max-w-xl mx-auto p-6 bg-white rounded-2xl shadow-md border text-center">
-      <form onSubmit={handleSubmit}>
-        <input
-          type="text"
-          placeholder="Paese"
-          value={paese}
-          onChange={(e) => setPaese(e.target.value)}
-          className="m-3 p-1 border"
+    <div className="flex items-start justify-center min-h-screen gap-6 px-4 pt-12">
+      {/* Animazioni lato sinistro */}
+      <div className="flex flex-col gap-6">
+        <Lottie
+          animationData={sunnyAnimation}
+          loop={true}
+          autoplay={true}
+          style={{ width: 100, height: 100 }}
         />
-        <br />
-        <input
-          type="text"
-          placeholder="Città"
-          value={città}
-          onChange={(e) => setCittà(e.target.value)}
-          className="m-3 p-1 border"
+        <Lottie
+          animationData={rainyAnimation}
+          loop={true}
+          autoplay={true}
+          style={{ width: 100, height: 100 }}
         />
-        <br />
-        <input
-          type="text"
-          placeholder="CAP"
-          value={cap}
-          onChange={(e) => setCap(e.target.value)}
-          className="m-3 p-1 border"
-        />
-        <br />
-        <button
-          type="submit"
-          className="bg-orange-400 text-white py-2 px-4 rounded-lg hover:bg-orange-500 transition m-2"
-        >
-          Cerca
-        </button>
-      </form>
+      </div>
 
-      {error && <p className="text-red-500 mt-4">Luogo non trovato.</p>}
+      {/* Form al centro */}
+      <div className="max-w-xl p-6 bg-white rounded-2xl shadow-md border border-gray-200 text-center">
+        <form onSubmit={handleSubmit}>
+          <input
+            type="text"
+            placeholder="Paese"
+            value={paese}
+            onChange={(e) => setPaese(e.target.value)}
+            className="m-3 p-1 border"
+          />
+          <br />
+          <input
+            type="text"
+            placeholder="Città"
+            value={città}
+            onChange={(e) => setCittà(e.target.value)}
+            className="m-3 p-1 border"
+          />
+          <br />
+          <input
+            type="text"
+            placeholder="CAP"
+            value={cap}
+            onChange={(e) => setCap(e.target.value)}
+            className="m-3 p-1 border"
+          />
+          <br />
+          <button
+            type="submit"
+            className="bg-orange-400 text-white py-2 px-4 rounded-lg hover:bg-orange-500 transition m-2"
+          >
+            Cerca
+          </button>
+        </form>
+
+        {error && <p className="text-red-500 mt-4">Luogo non trovato.</p>}
+      </div>
+
+      {/* Animazioni lato destro */}
+      <div className="flex flex-col gap-6">
+        <Lottie
+          animationData={cloudyAnimation}
+          loop={true}
+          autoplay={true}
+          style={{ width: 100, height: 100 }}
+        />
+        <Lottie
+          animationData={snowlyAnimation}
+          loop={true}
+          autoplay={true}
+          style={{ width: 100, height: 100 }}
+        />
+      </div>
     </div>
   );
 };
