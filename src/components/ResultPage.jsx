@@ -2,7 +2,6 @@ import { useEffect } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { useWeather } from "../hook/useWeather";
 import Lottie from "lottie-react";
-
 import sunnyAnimation from "../animation/sunny.json";
 import rainyAnimation from "../animation/rainy.json";
 import cloudyAnimation from "../animation/cloudy.json";
@@ -15,7 +14,7 @@ const ResultPage = () => {
 
   useEffect(() => {
     if (!state) {
-      navigate("/"); // se l'utente arriva qui per errore
+      navigate("/"); 
       return;
     }
 
