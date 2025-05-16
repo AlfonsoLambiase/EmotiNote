@@ -24,7 +24,7 @@ const Home = () => {
         <br />
         Sentiti libero di essere te stesso, senza filtri né giudizi.
         <br/> 
-        Le tue emozioni contano.
+        Le tue emozioni contano.🫂
       </p>
     
         <Lottie 
