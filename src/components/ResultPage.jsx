@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { useWeather } from "../hook/useWeather";
 import Lottie from "lottie-react";
@@ -11,6 +11,11 @@ const ResultPage = () => {
   const { state } = useLocation();
   const navigate = useNavigate();
   const { getWeather, getWeatherDescription, meteo, error, loading } = useWeather();
+    const [influenza, setInfluenza] = useState("");
+
+     const handleChange = (event) => {
+    setInfluenza(event.target.value);
+  };
 
   useEffect(() => {
     if (!state) {
@@ -25,7 +30,8 @@ const ResultPage = () => {
   if (!state) return null;
 
   return (
-    <div className="flex items-start justify-center min-h-screen gap-6 px-16 pt-12">
+    <>
+    <div className="flex items-start justify-center h-auto gap-6 px-16 pt-12">
       {/* Colonna animazioni a sinistra */}
       <div className="flex flex-col gap-6">
         <Lottie
@@ -63,7 +69,7 @@ const ResultPage = () => {
 
         <button
           onClick={() => navigate("/FormLocation")}
-          className="bg-orange-400 text-white py-2 px-4 rounded-lg hover:bg-orange-500 transition m-2"
+          className="bg-orange-400 text-white py-2 px-4 rounded-lg hover:bg-orange-500 transition mt-4"
         >
           Torna alla ricerca
         </button>
@@ -85,6 +91,54 @@ const ResultPage = () => {
         />
       </div>
     </div>
+
+
+ <div className="flex items-start justify-center h-auto gap-6 px-16 pt-5 py-2 " >
+      <form className="p-4 bg-white rounded-xl shadow-md border border-gray-200">
+        <p className="font-bold text-xl mb-4 mx-4">Quanto ti influenza il meteo di oggi?</p>
+
+        <label className="block mb-2">
+          <input
+            type="radio"
+            name="meteo"
+            value="tanto"
+            checked={influenza === "tanto"}
+            onChange={handleChange}
+            className="mr-2"
+          />
+          Tanto 👍🏻
+        </label>
+
+        <label className="block mb-2">
+          <input
+            type="radio"
+            name="meteo"
+            value="poco"
+            checked={influenza === "poco"}
+            onChange={handleChange}
+            className="mr-2"
+          />
+          Non particolarmente 🤏🏻
+        </label>
+
+        <label className="block mb-2">
+          <input
+            type="radio"
+            name="meteo"
+            value="niente"
+            checked={influenza === "niente"}
+            onChange={handleChange}
+            className="mr-2"
+          />
+          Per niente 👎🏻
+        </label>
+
+        <p className="mt-4 text-sm text-gray-600">
+  Risposta selezionata: <strong>{influenza || "Nessuna"}</strong>
+</p>
+        </form>
+</div>
+    </>
   );
 };
 
