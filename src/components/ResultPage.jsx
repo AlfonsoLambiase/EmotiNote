@@ -138,11 +138,34 @@ const ResultPage = () => {
       </li>
     </ul>
 
-    <button
-      onClick={() => navigate("/Diario")}
-      className="bg-orange-400 text-white py-2 px-4 rounded-lg hover:bg-orange-500 transition">
-      Scopri il risultato
-    </button>
+ <button
+  onClick={() => {
+    const oggi = new Date().toISOString().split("T")[0]; 
+
+    const noteMap = {
+      tanto: "Sei meteoropatico 🌧️☀️",
+      poco: "Il meteo ti influenza leggermente 🌤️",
+      niente: "Il meteo non ti influenza minimamente 💪🏼"
+    };
+
+    const nuovoEntry = {
+      mood: influenza,
+      timestamp: oggi,
+      note: noteMap[influenza] || "Nessuna nota"
+    };
+
+    const diario = JSON.parse(localStorage.getItem("diario")) || [];
+    diario.push(nuovoEntry);
+    localStorage.setItem("diario", JSON.stringify(diario));
+
+    navigate("/Diario");
+  }}
+  disabled={!influenza}
+  className="bg-orange-400 text-white py-2 px-4 rounded-lg hover:bg-orange-500 transition disabled:bg-gray-400 disabled:cursor-not-allowed"
+>
+  Scopri il risultato
+</button>
+
   </form>
 </div>
 
