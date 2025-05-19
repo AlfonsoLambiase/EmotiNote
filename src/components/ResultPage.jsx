@@ -93,51 +93,59 @@ const ResultPage = () => {
     </div>
 
 
- <div className="flex items-start justify-center h-auto gap-6 px-16 pt-5 py-2 " >
-      <form className="p-4 bg-white rounded-xl shadow-md border border-gray-200">
-        <p className="font-bold text-xl mb-4 mx-4">Quanto ti influenza il meteo di oggi?</p>
+ <div className="flex items-start justify-center h-auto gap-6 px-16 pt-5 py-2 text-center">
+  <form className="p-4 bg-white rounded-xl shadow-md border border-gray-200">
+    <p className="font-bold text-xl mb-4 mx-4">Quanto ti influenza il meteo di oggi?</p>
 
-        <label className="block mb-2">
+    <ul className="flex flex-col items-center gap-3 mb-4 ml-18">
+      <li>
+        <label className="flex items-center gap-2 w-48 justify-start">
           <input
             type="radio"
             name="meteo"
             value="tanto"
             checked={influenza === "tanto"}
             onChange={handleChange}
-            className="mr-2"
           />
           Tanto 👍🏻
         </label>
+      </li>
 
-        <label className="block mb-2">
+      <li>
+        <label className="flex items-center gap-2 w-48 justify-start">
           <input
             type="radio"
             name="meteo"
             value="poco"
             checked={influenza === "poco"}
             onChange={handleChange}
-            className="mr-2"
           />
-          Non particolarmente 🤏🏻
+          Poco 🤏🏻
         </label>
+      </li>
 
-        <label className="block mb-2">
+      <li>
+        <label className="flex items-center gap-2 w-48 justify-start">
           <input
             type="radio"
             name="meteo"
             value="niente"
             checked={influenza === "niente"}
             onChange={handleChange}
-            className="mr-2"
           />
           Per niente 👎🏻
         </label>
+      </li>
+    </ul>
 
-        <p className="mt-4 text-sm text-gray-600">
-  Risposta selezionata: <strong>{influenza || "Nessuna"}</strong>
-</p>
-        </form>
+    <button
+      onClick={() => navigate("/Diario")}
+      className="bg-orange-400 text-white py-2 px-4 rounded-lg hover:bg-orange-500 transition">
+      Scopri i risultati
+    </button>
+  </form>
 </div>
+
     </>
   );
 };
