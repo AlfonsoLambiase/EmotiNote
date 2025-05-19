@@ -141,7 +141,7 @@ const ResultPage = () => {
     <button
       onClick={() => navigate("/Diario")}
       className="bg-orange-400 text-white py-2 px-4 rounded-lg hover:bg-orange-500 transition">
-      Scopri i risultati
+      Scopri il risultato
     </button>
   </form>
 </div>
