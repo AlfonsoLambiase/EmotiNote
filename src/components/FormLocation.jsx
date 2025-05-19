@@ -52,7 +52,7 @@ const FormLocation = () => {
   };
 
   return (
-    <div className="flex items-start justify-center min-h-screen gap-6 px-4 pt-12">
+    <div className="flex items-start justify-center gap-6 px-4 pt-12">
       {/* Animazioni lato sinistro */}
       <div className="flex flex-col gap-6">
         <Lottie
