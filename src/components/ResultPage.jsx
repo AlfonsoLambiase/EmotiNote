@@ -103,8 +103,8 @@ const ResultPage = () => {
           <input
             type="radio"
             name="meteo"
-            value="tanto"
-            checked={influenza === "tanto"}
+            value="Tanto"
+            checked={influenza === "Tanto"}
             onChange={handleChange}
           />
           Tanto 👍🏻
@@ -116,8 +116,8 @@ const ResultPage = () => {
           <input
             type="radio"
             name="meteo"
-            value="poco"
-            checked={influenza === "poco"}
+            value="Poco"
+            checked={influenza === "Poco"}
             onChange={handleChange}
           />
           Poco 🤏🏻
@@ -129,8 +129,8 @@ const ResultPage = () => {
           <input
             type="radio"
             name="meteo"
-            value="niente"
-            checked={influenza === "niente"}
+            value="Per niente"
+            checked={influenza === "Per niente"}
             onChange={handleChange}
           />
           Per niente 👎🏻
@@ -143,9 +143,9 @@ const ResultPage = () => {
     const oggi = new Date().toISOString().split("T")[0]; 
 
     const noteMap = {
-      tanto: "Sei meteoropatico 🌧️☀️",
-      poco: "Il meteo ti influenza leggermente 🌤️",
-      niente: "Il meteo non ti influenza minimamente 💪🏼"
+      Tanto: "Sei meteoropatico 🌧️☀️",
+      Poco: "Il meteo ti influenza leggermente 🌤️",
+      "Per niente": "Il meteo non ti influenza minimamente 💪🏼"
     };
 
     const nuovoEntry = {
